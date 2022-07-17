@@ -1,0 +1,56 @@
+/* Regular temp sumikko gurashi theme*/
+.App.sumi {
+  background-image: url('./assests/sumi.jpg');
+}
+
+.App.sumi main{
+  background-image: linear-gradient(to bottom, rgba(152, 130, 239, 0.5), rgba(0, 0, 0, 0.25));
+}
+
+.App.sumi .location-weather-box{
+  background-color: rgba(142, 135, 224, 0.5);
+  color: #fdd872;
+}
+
+.App.sumi .weather-box .temp{
+  background-color: rgba(137, 129, 225, 0.5);
+}
+
+
+/* High temp */
+.App.sumi.hot{
+  background-image: url('./assests/sumi-summer.jpg');
+}
+
+.App.sumi.hot main{
+  background-image: linear-gradient(to bottom, rgba(231, 243, 248, 0.5), rgba(0, 0, 0, 0.25));
+}
+
+.search-box .search-bar{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.App.sumi.hot .location-weather-box{
+  background-color: rgba(231, 199, 214, 0.5);
+  color: #e34f56;
+}
+
+.App.sumi.hot .weather-box .temp{
+  background-color: rgba(201, 225, 239, 0.5);
+}
+  
+
+/* Cold temp */
+.App.sumi.cold {
+  background-image: url('./assests/sumi-winter.jpg');
+}
+
+.App.sumi.cold main{
+  background-image: linear-gradient(to bottom, rgba(206, 222, 251, 0.5), rgba(0, 0, 0, 0.25));
+}
+
+.App.sumi.cold .location-weather-box{
+  background-color: rgba(192, 221, 240, 0.5);
+  color: #066c67;
+  text-shadow: 3px 6px rgba(50, 58, 70, 0);
+}

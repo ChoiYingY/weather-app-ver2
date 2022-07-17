@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Courier New',  monospace;
+}
+
+.App {
+  background-image: url('./assests/default.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.4s ease-out;
+}
+
+main{
+  min-height: 100vh;
+  margin: 0;
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-box{
+  margin: auto;
+  width: 75%;
+}
+
+.search-box .search-bar{
+  display: block; 
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.choose-theme{
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  border-radius: 36px;
+}
+
+.location-weather-box{
+  width: 75%;
+  margin: 6% auto;
+  border-radius: 15px 25px;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  background-color: rgba(99, 114, 124, 0.4);
+  padding: 2.5%;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.location-box .location{
+  padding-bottom: 3.5%;
+  
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  font-size: 32px;
+  font-weight: 550;
+}
+
+.location-box .date{
+  text-shadow: 2px 2px rgba(50, 58, 70, 0.5);
+}
+
+.location-box .date{
+  font-size: 20px;
+  font-weight: 550;
+  font-style: italic;
+}
+
+.weather-box .temperatures{
+  display: flex;
+  justify-content: center;
+  padding: 2.5%;
+}
+
+.weather-box .temp{
+  position: relative;
+  display: inline-block;
+  padding: 1%;
+}
+
+.weather-box .tempLabel{
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 3px 2px rgba(50, 58, 70, 0.5);
+}
+
+.weather-box .temperature{
+  margin: 1%;
+  font-size: 80px;
+  font-weight: 900;
+
+  text-shadow: 3px 6px rgba(50, 58, 70, 0.5);
+  text-align: center;
+}
+
+.weather-box .weather{
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 2.5%;
+
+  text-shadow: 3px 3px rgba(50, 58, 70, 0.5);
+  text-align: center;
+}
+
+.weather-box .temp{
+  border-radius: 15px 25px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Share prop */
+.App.sumi.hot .weather-box .temp, .App.sumi.cold .weather-box .temp{
+  background-color: rgba(200, 231, 239, 0.3);
+}
+
+.App.cold .location-box .location, .App.sumi.hot .location-box .location, .App.sumi.cold .location-box .location,
+.App.cold .location-box .date, .App.sumi.hot .location-box .date, .App.sumi.cold .location-box .date,
+.App.cold .weather-box .tempLabel, .App.sumi.hot .weather-box .tempLabel, .App.sumi.cold .weather-box .tempLabel
+.App.cold .weather-box .temperature, .App.sumi.hot .weather-box .temperature, .App.sumi.cold .weather-box .temperature,
+.App.cold .weather-box .weather, .App.sumi.hot .weather-box .weather, .App.sumi.cold .weather-box .weather
+{
+  text-shadow: 3px 3px rgba(50, 50, 70, 0);
+}

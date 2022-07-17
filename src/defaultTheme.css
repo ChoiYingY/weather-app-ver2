@@ -1,0 +1,50 @@
+.Appefault main{
+  background-image: linear-gradient(to bottom, rgba(240, 250, 244, 0.5), rgba(0, 0, 0, 0.25));
+}
+
+.App .location-weather-box{
+  background-color: rgba(205, 184, 202, 0.436);
+  color: #fffda3;
+}
+
+.App .weather-box .temp{
+  background-color: rgba(171, 215, 149, 0.5);
+}
+
+
+/* High temp */
+.App.hot {
+  background-image: url('./assests/default-summer.jpg');
+}
+
+.App.hot main{
+  background-image: linear-gradient(to bottom, rgba(146, 202, 247, 0.5), rgba(0, 0, 0, 0.25));
+}
+
+.App.hot .location-weather-box{
+  background-color: rgba(166, 183, 201, 0.5);
+  color: #F9DF6E;
+}
+
+.App.hot .weather-box .temp{
+  background-color: rgba(131, 155, 181, 0.5);
+}
+
+
+/* Cold temp */
+.App.cold {
+  background-image: url('./assests/default-winter.jpg');
+}
+
+.App.cold main{
+  background-image: linear-gradient(to bottom, rgba(206, 222, 251, 0.5), rgba(0, 0, 0, 0.25));
+}
+
+.App.cold .location-weather-box{
+  background-color: rgba(189, 212, 227, 0.4);
+  color: #063922;
+}
+
+.App.cold .weather-box .temp{
+  background-color: rgba(168, 211, 221, 0.3);
+}
