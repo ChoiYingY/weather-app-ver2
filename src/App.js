@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import TempBox from './tempBox';
 
 const api = {
   key: `${process.env.REACT_APP_WEATHER_API_KEY}`,
@@ -42,7 +43,6 @@ function App() {
   }
 
   return (
-    // <div className='App'>
     <div className={
       (typeof weather.main != "undefined") ?
         ((weather.main.temp > 20) ? `App ${theme} ${"hot"}`:
@@ -82,25 +82,10 @@ function App() {
 
               <div className='weather-box'>
                 <div className='temperatures'>
-                  <div className='temp'>
-                    <h1 className='tempLabel'> Current temp: </h1>
-                    <h2 className='temperature'> {Math.round(weather.main.temp)}°C </h2>
-                  </div>
-
-                  <div className='temp'>
-                    <h1 className='tempLabel'> Feels like: </h1>
-                    <h2 className='temperature'> {Math.round(weather.main.feels_like)}°C </h2>
-                  </div>
-
-                  <div className='temp'>
-                    <h1 className='tempLabel'> Lowest temp: </h1>
-                    <h2 className='temperature'> {Math.round(weather.main.temp_min)}°C </h2>
-                  </div>
-
-                  <div className='temp'>
-                    <h1 className='tempLabel'> Highest temp: </h1>
-                    <h2 className='temperature'> {Math.round(weather.main.temp_max)}°C </h2>
-                  </div>
+                  <TempBox tempLabel="Current temp: " temp={weather.main.temp}/>
+                  <TempBox tempLabel="Feels like: " temp={weather.main.feels_like}/>
+                  <TempBox tempLabel="Lowest temp: " temp={weather.main.temp_min}/>
+                  <TempBox tempLabel="Highest temp: " temp={weather.main.temp_max}/>
                 </div>
 
                 <div className='weather'>
