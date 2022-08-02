@@ -33,13 +33,20 @@ function App() {
   const dateBuilder = (d) => {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-  
-    let day = days[d.getDay()];
-    let date = d.getDate();
-    let month = months[d.getMonth()];
-    let year = d.getFullYear();
 
-    return `${day} ${date} ${month} ${year}`;
+    let localTime = d.getTime();
+    let localOffset = d.getTimezoneOffset() * 60000;
+    let utc = localTime + localOffset;
+
+    let time = utc + (1000 * weather.timezone);
+    var newDate = new Date(time);
+
+    let day = days[newDate.getDay()];
+    let date = newDate.getDate();
+    let month = months[newDate.getMonth()];
+    let year = newDate.getFullYear();
+
+    return `${day}, ${date} ${month} ${year}, ${newDate.toLocaleTimeString()}`;
   }
 
   return (
@@ -76,7 +83,8 @@ function App() {
           (
             <div className='location-weather-box'>
               <div className='location-box'>
-                <div className='location'>{weather.name}, {weather.sys.country}</div>
+                <div className='location'>{weather.name}
+                {(weather.sys.country !== undefined) ? (", "  + weather.sys.country) : ""}</div>
                 <div className='date'>{dateBuilder(new Date())}</div>
               </div>
 
