@@ -1,12 +1,16 @@
 # Weather Forecast App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and had utilized OpenWeatherMap API.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) + usage of OpenWeatherMap API.
 
 ## About
 
 In this project, users can look for temperature at a chosen region through the weather app. The background theme will change depend on the current tempature. Additionally, users can choose a speciifc theme for this weather app, and the current 3 theme options will be default(nature), One Piece, and Sumikko Gurashi.
 
 
+## What to improve on this project
+* It would be better if the time of all regions can update automatically at its local time zone for this app.
+* I can add more theme choices for this app!
+  
 ## Project showcase
 
 ### 1) Default background themes without providing any region's name
@@ -21,11 +25,6 @@ In this project, users can look for temperature at a chosen region through the w
 
 ### 3) Cold background themes with provided region & display timezone changes
 <img src="src/assests/gif/winter.gif">
-
-
-## What to improve on this project
-
-It would be better if the time of all regions can update automatically at its local time zone for this app. I can even add more themes on this!
 
 ## Available Scripts
 
