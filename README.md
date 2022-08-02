@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+# Weather Forecast App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and had utilized OpenWeatherMap API.
+
+## About
+
+In this project, users can look for temperature at a chosen region through the weather app. The background theme will change depend on the current tempature. Additionally, users can choose a speciifc theme for this weather app, and the current 3 theme options will be default(nature), One Piece, and Sumikko Gurashi.
+
+
+## Project showcase
+
+### 1) Default background themes without providing any region's name
+<img src="src/assests/gif/default.gif">
+
+------
+
+### 2) Summer background themes with provided region
+<img src="src/assests/gif/summer.gif">
+
+------
+
+### 2) Cold background themes with provided region & display timezone changes
+<img src="src/assests/gif/winter.gif">
 
 ## Available Scripts
 
