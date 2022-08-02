@@ -46,7 +46,8 @@
 }
 
 .App.op.cold .location-weather-box{
-  background-color: rgba(93, 124, 145, 0.4);
+  background-color: rgba(93, 124, 145, 0.425);
+  color: rgb(208, 255, 228);
 }
 
 .App.op.cold .weather-box .temp{
