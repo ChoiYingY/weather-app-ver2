@@ -19,7 +19,7 @@ In this project, users can look for temperature at a chosen region through the w
 
 ------
 
-### 2) Cold background themes with provided region & display timezone changes
+### 3) Cold background themes with provided region & display timezone changes
 <img src="src/assests/gif/winter.gif">
 
 ## Available Scripts
