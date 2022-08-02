@@ -22,6 +22,11 @@ In this project, users can look for temperature at a chosen region through the w
 ### 3) Cold background themes with provided region & display timezone changes
 <img src="src/assests/gif/winter.gif">
 
+
+## What to improve on this project
+
+It would be better if the time of all regions can update automatically at its local time zone for this app. I can even add more themes on this!
+
 ## Available Scripts
 
 In the project directory, you can run:
